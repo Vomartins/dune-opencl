@@ -1,0 +1,87 @@
+Determining if the std::identity exist failed with the following output:
+Change Dir: /home/vinicius/Documentos/OpenCL/dune-opencl/dune-opencl/build-cmake/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_44f7d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_44f7d.dir/build.make CMakeFiles/cmTC_44f7d.dir/build
+gmake[1]: Entering directory '/home/vinicius/Documentos/OpenCL/dune-opencl/dune-opencl/build-cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_44f7d.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++   -std=c++17   -fPIE -o CMakeFiles/cmTC_44f7d.dir/CheckSymbolExists.cxx.o -c /home/vinicius/Documentos/OpenCL/dune-opencl/dune-opencl/build-cmake/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/vinicius/Documentos/OpenCL/dune-opencl/dune-opencl/build-cmake/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/vinicius/Documentos/OpenCL/dune-opencl/dune-opencl/build-cmake/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:7:24: error: ‘identity’ is not a member of ‘std’
+    7 |   return ((int*)(&std::identity))[argc];
+      |                        ^~~~~~~~
+gmake[1]: *** [CMakeFiles/cmTC_44f7d.dir/build.make:78: CMakeFiles/cmTC_44f7d.dir/CheckSymbolExists.cxx.o] Error 1
+gmake[1]: Leaving directory '/home/vinicius/Documentos/OpenCL/dune-opencl/dune-opencl/build-cmake/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_44f7d/fast] Error 2
+
+
+File /home/vinicius/Documentos/OpenCL/dune-opencl/dune-opencl/build-cmake/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <functional>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+  return ((int*)(&std::identity))[argc];
+}
+Determining if the function sgemm_ exists failed with the following output:
+Change Dir: /home/vinicius/Documentos/OpenCL/dune-opencl/dune-opencl/build-cmake/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8d866/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8d866.dir/build.make CMakeFiles/cmTC_8d866.dir/build
+gmake[1]: Entering directory '/home/vinicius/Documentos/OpenCL/dune-opencl/dune-opencl/build-cmake/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8d866.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sgemm_ -fPIE -o CMakeFiles/cmTC_8d866.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_8d866
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8d866.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=sgemm_ CMakeFiles/cmTC_8d866.dir/CheckFunctionExists.c.o -o cmTC_8d866 
+/usr/bin/ld: CMakeFiles/cmTC_8d866.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `sgemm_'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_8d866.dir/build.make:99: cmTC_8d866] Error 1
+gmake[1]: Leaving directory '/home/vinicius/Documentos/OpenCL/dune-opencl/dune-opencl/build-cmake/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_8d866/fast] Error 2
+
+
+
+Determining if the function cheev_ exists failed with the following output:
+Change Dir: /home/vinicius/Documentos/OpenCL/dune-opencl/dune-opencl/build-cmake/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ded88/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ded88.dir/build.make CMakeFiles/cmTC_ded88.dir/build
+gmake[1]: Entering directory '/home/vinicius/Documentos/OpenCL/dune-opencl/dune-opencl/build-cmake/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ded88.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=cheev_ -fPIE -o CMakeFiles/cmTC_ded88.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ded88
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ded88.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=cheev_ CMakeFiles/cmTC_ded88.dir/CheckFunctionExists.c.o -o cmTC_ded88  /usr/lib/x86_64-linux-gnu/libblas.so /usr/lib/x86_64-linux-gnu/libf77blas.so /usr/lib/x86_64-linux-gnu/libatlas.so -lm -ldl 
+/usr/bin/ld: CMakeFiles/cmTC_ded88.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `cheev_'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_ded88.dir/build.make:102: cmTC_ded88] Error 1
+gmake[1]: Leaving directory '/home/vinicius/Documentos/OpenCL/dune-opencl/dune-opencl/build-cmake/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_ded88/fast] Error 2
+
+
+
+Determining if the function cheev_ exists failed with the following output:
+Change Dir: /home/vinicius/Documentos/OpenCL/dune-opencl/dune-opencl/build-cmake/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_97809/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_97809.dir/build.make CMakeFiles/cmTC_97809.dir/build
+gmake[1]: Entering directory '/home/vinicius/Documentos/OpenCL/dune-opencl/dune-opencl/build-cmake/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_97809.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=cheev_ -fPIE -o CMakeFiles/cmTC_97809.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_97809
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_97809.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=cheev_ CMakeFiles/cmTC_97809.dir/CheckFunctionExists.c.o -o cmTC_97809  /usr/lib/x86_64-linux-gnu/liblapack.so /usr/lib/x86_64-linux-gnu/libblas.so /usr/lib/x86_64-linux-gnu/libf77blas.so /usr/lib/x86_64-linux-gnu/libatlas.so -fortranlibs 
+cc: error: unrecognized command-line option ‘-fortranlibs’
+gmake[1]: *** [CMakeFiles/cmTC_97809.dir/build.make:103: cmTC_97809] Error 1
+gmake[1]: Leaving directory '/home/vinicius/Documentos/OpenCL/dune-opencl/dune-opencl/build-cmake/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_97809/fast] Error 2
+
+
+
+Determing location of ARPACK failed:
+Libraries to link against: 
+
+Determing location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+

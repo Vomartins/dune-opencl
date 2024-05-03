@@ -1,0 +1,12 @@
+################################
+# Dune module information file #
+################################
+
+# Name of the module
+Module: dune-opencl
+Version: 1.0
+Maintainer: vmartins@ime.unicamp.br
+# Required build dependencies
+Depends: dune-common dune-geometry dune-uggrid dune-grid dune-istl
+# Optional build dependencies
+#Suggests:
